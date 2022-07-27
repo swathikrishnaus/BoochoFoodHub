@@ -1,0 +1,749 @@
+
+
+body{
+  background-color: black;
+}
+.navbar img{
+  width: 120px;
+  height: auto;
+}
+.navbar ul{
+  margin-left: 100px;
+}
+.bookbtn{
+  height: 40px;
+    width: 130px;
+    background:rgb(0, 0, 0);
+    margin: 20px;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    border: 0px;
+    color: #fff;
+    border-radius: 15px;
+}
+.carousel-caption{
+  text-align: left;
+}
+.carousel-contents{
+  margin-left: 5px !important;
+}
+.carouselbtn{
+  margin-top: 30px;
+  
+}
+.explore{
+  background-color: rgb(255, 208, 0);
+  color: white;
+  margin-right: 10px;
+  border-radius: 15px;
+  width: 140px;
+  transition: 0.3s;
+}
+
+.yellow-text{
+  color: rgb(255, 208, 0);
+  font-weight: normal;
+}
+.sub-head{
+  color: rgb(167, 154, 154);
+  font-weight: normal;
+}
+ .bookbtn:hover{
+  border: #be1515;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  border: none;
+}
+.home .carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat  left scroll;
+  background-size: cover;
+}
+.carousel-item .carousel-caption{
+  bottom: 180px;
+  
+}
+.carousel-caption h1{
+  font-size: 40px;
+  font-weight: normal;
+  /* margin-top: 100px; */
+  margin-top: 500px;
+}
+.carousel-caption p{
+  width: 60%;
+  /* font-size: 18px; */
+}
+
+.navbar-nav a{
+  font-size: 16px;
+}
+/* .navbar-light .navbar-brand{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+} */
+.navbar-light .navbar-nav .nav-link{
+  color: rgb(0, 0, 0);
+}
+/* .navbar-nav{
+  text-align: left;
+} */
+.nav-link{
+  padding: .2rem 1rem;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(255, 208, 0) !important;
+}
+.w-100{
+  height: 100vh;
+}
+@media only screen and (max-width:767px){
+  .navbar-nav.ml-auto{
+      background: rgba(0,0,0,0.5);
+  }
+  .naabar-toggler{
+      padding: 1px 5px;
+      font-size: 18px;
+      line-height: 0.3;
+      background: rgb(0, 0, 0);
+  }
+}
+
+
+
+/* ---------------------------css for about start-------------------------- */
+
+.about{
+  margin-top: 200px;
+}
+.about h5, h2{
+  font-weight: normal;
+}
+.about-text{
+  /* width: 500px; */
+  color: rgb(98, 98, 99);
+  margin-top: 20px;
+}
+
+
+.about-contents{
+  margin-top: 50px;
+}
+/* ---------------------------css for about end-------------------------- */
+
+
+/* ---------------------------css for boocho-special start-------------------------- */
+
+.boocho-special{
+  margin-top: 200px;
+}
+
+
+/* ---------------------------css for boocho-special end-------------------------- */
+
+
+
+/* -------------------------css for boocho special start------------------------------------ */
+
+
+.boocho-special .carousel-indicators{
+  left: 0;
+  top: auto;
+  bottom: -70px;
+}
+.boocho-special .carousel-indicators li{
+  background: rgb(112, 105, 105);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+
+}
+.boocho-special .carousel-indicators .active{
+  background-color: #fff;
+}
+.boocho-special img{
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.boocho-special img:hover{
+  opacity: 0.8;
+}
+.boocho-special .card{
+  background-color: rgb(15, 15, 15);
+  border-top-left-radius: 20px;
+}
+.boocho-special .card .stars  i{
+  color: rgb(255, 208, 0);
+font-size: 14px;
+}
+.boocho-special .card p{
+  color: rgb(148, 131, 131);
+}
+.boocho-special-carousel{
+  margin-top: 50px;
+}
+
+@media only screen and (max-width:767px){
+  .boocho-special .card{
+      margin: 0 auto;
+  }
+ 
+}
+
+/* -------------------------css for boocho special e------------------------------------  */
+
+
+
+/* ---------------------------css for photos start-------------------------- */
+
+.gallery{
+  margin-top: 20px
+}
+.photos{
+  margin-top: 200px;
+}
+.gallery button{
+  text-align: right;
+ 
+}
+.photos .btn{
+  background: rgb(255, 208, 0);
+  color: white;
+}
+.photos .btn:hover{
+  opacity: .6;
+}
+.photos img{
+  width: 300px;
+  border-radius: 5px;
+  height: auto;
+}
+.photos img:hover{
+  opacity: .7;
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+.photo-column{
+  width: 265px;
+  height: auto;
+}
+.photo-column2{
+  width: 265px;
+  height: 401px;
+}
+@media only screen and (max-width:767px){
+  .photos img{
+    display: block;
+      margin: 0 auto;
+      padding: 0;
+      margin-top: 10px;
+  }
+  .photos{
+    margin: 0 auto;
+  }
+  .photos .row{
+    margin-top: 10px;
+  }
+}
+
+
+/* ---------------------------css for photos end-------------------------- */
+
+
+
+/* ---------------------------css for facilities start-------------------------- */
+
+
+.facilities{
+  margin-top: 200px;
+  background-color: rgb(20, 20, 20);
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.facilities-paragraph{
+  width: 400px;
+}
+.facilities p{
+  color: rgb(98, 98, 99);
+}
+.facilities-cards{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.facilities-cards .card{
+  margin: 0 auto;
+  padding-top: 25px;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.facilities-cards .card a{
+  color: rgb(98, 98, 99);
+  text-align: center;
+}
+.facilities-cards .card a:hover{
+  text-decoration: none;
+  color: rgb(255, 208, 0);
+}
+.facilities-cards .card img{
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width:767px){
+  .facilities-cards{
+      margin: 0 auto;
+      padding: 0;
+  }
+ 
+}
+
+/* ---------------------------css for facilities end-------------------------- */
+
+
+
+
+
+/* ---------------------------css for testimonials start-------------------------- */
+
+.testimonials{
+  margin-top: 200px;
+}
+.testimonials-text{
+  width: 450px;
+  color: rgb(98, 98, 99);
+}
+.testimonials .feedbacks .card{
+  background: none;
+}
+.testimonials .feedbacks{
+  margin-top: 50px;
+}
+.testimonials .feedbacks .card img{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonials .feedbacks .card .stars{
+  color: rgb(255, 208, 0);
+  margin: 0 auto;
+  font-size: 13px;
+}
+.testimonials .feedbacks .card h6, p{
+  color: rgb(98, 98, 99);
+  
+}
+.testimonials .feedbacks .carousel-indicators{
+  left: 0;
+  top: auto;
+  bottom: -70px;
+}
+.testimonials .feedbacks .carousel-indicators li{
+  background: rgb(112, 105, 105);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+
+}
+.testimonials .feedbacks .carousel-indicators .active{
+  background-color: #fff;
+}
+/* ---------------------------css for testimonials end-------------------------- */
+
+
+
+
+
+
+/* ---------------------------css for services end-------------------------- */
+
+
+.services{
+  margin-top: 200px;
+}
+.services-cards{
+  margin-top: 50px;
+}
+.services-cards .card{
+  background-color: rgb(15, 15, 15);
+  padding-top: 30px;
+  border-top-right-radius: 15%;
+  width: 265px;
+}
+.services-cards .card img{
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
+.services-cards .card .fast-delivery{
+  width: 85px;
+  margin-top: -8px;
+}
+.services-cards .card a{
+  color: rgb(98, 98, 99);
+}
+.services-cards .card a:hover{
+  color: rgb(255, 208, 0);
+  text-decoration: none;
+}
+.services-text{
+  width: 450px;
+  color: rgb(98, 98, 99);
+}
+/* ---------------------------css for services end-------------------------- */
+
+
+
+
+/* ---------------------------css for contact start-------------------------- */
+
+.contact{
+  margin-top: 200px;
+}
+.contact-text{
+  width: 420px;
+}
+.contact .contact-contents img{
+  margin-top: -90px;
+}
+.contact .contact-contents form{
+  margin-top: 30px;
+  width: 400px;
+  background: #181616;
+  padding: 35px;
+  border-top-right-radius: 30px;
+}
+.contact .contact-contents form input {
+  background-color: #111010;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.contact .contact-contents form textarea{
+  background-color: #111010;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+.contact .contact-contents form .btn{
+  width: 200px;
+  background-color: rgb(255, 208, 0);
+  color: white;
+  border-radius: 10px;
+}
+@media only screen and (max-width:767px){
+  .contact .contact-contents img{
+      margin: 0 auto;
+      width: 450px;
+      height: auto;
+  }
+  .contact .contact-contents form{
+    margin: 0 auto;
+  }
+}
+
+
+/* ---------------------------css for contact end-------------------------- */
+
+
+
+
+/* ---------------------------css for menu start-------------------------- */
+.menu{
+  margin-top: 200px;
+  width: 100%;
+  background-color: #111010;
+  padding: 55px;
+}
+.menu-text{
+  width: 450px;
+  color: rgb(98, 98, 99);
+}
+.menu .main {
+  max-width: 1000px;
+  margin: auto;
+}
+.menu .menu-gallery{
+  margin-top: 50px;
+}
+
+.menu .menu-gallery h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.menu .menu-gallery .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.menu  .row,
+.row >  .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.menu  .column {
+  float: left;
+  /* width: 33.33%; */
+  width: 25%;
+  display: none; /* Hide columns by default */
+}
+@media only screen and (max-width:767px){
+  .menu  .column{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Clear floats after rows */
+.menu  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.menu  .content {
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.menu .show {
+  display: block;
+}
+
+/* Style the buttons */
+.menu  .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background: none;
+  cursor: pointer;
+  color: rgb(180, 170, 170);
+}
+
+/* Add a grey background color on mouse-over */
+.menu  .btn:hover {
+  background-color: rgb(255, 208, 0);
+}
+
+/* Add a dark background color to the active button */
+.menu  .btn.active {
+  background-color: rgb(255, 208, 0);
+   color: white;
+}
+
+
+.menu  .card{
+  background-color: rgb(0, 0, 0);
+  border-top-right-radius: 15%;
+  width: 260px;
+}
+.menu  .card img{
+  border-top-right-radius: 15%;
+  width: 100%;
+}
+.menu  .card .price p{
+  color: rgb(180, 170, 170);
+}
+.menu  .card a{
+  color: rgb(180, 170, 170);
+}
+.menu  .card a:hover{
+  color: rgb(255, 208, 0);
+}
+.buttonlist .btn{
+  margin: 0 auto;
+}
+/* ---------------------------css for menu end-------------------------- */
+
+
+
+
+
+/* ---------------------------css for footer start-------------------------- */
+
+
+.footer{
+  margin-top: 200px;
+  background-color: #181616;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.footer img{
+  width: 150px;
+  height: auto;
+}
+.footer .links{
+  margin-top: 30px;
+}
+.footer a{
+  
+  color: rgb(180, 170, 170);
+}
+.footer p{
+  margin-top: 30px;
+  color: rgb(180, 170, 170);
+}
+.footer-icons img{
+  width: 40px;
+  height: auto;
+}
+.demopadding {
+  /* margin:50px auto; */
+  width:140px;
+  text-align:center;
+}
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	color:#ffffff;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+  color:#ffffff;
+}
+
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:rgb(255, 208, 0) ;
+	color:#262626;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social:hover {
+	background:rgb(255, 208, 0) ;
+	color:rgb(255, 208, 0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+.footer-contact{
+  margin-top: 30px;
+}
+
+
+
+
+
+
+/* ---------------------------css for footer end-------------------------- */
+
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+.social-network a.icoInstagram:hover {
+  background-color: rgb(193, 53, 132);
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #ffffff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: rgb(167, 115, 4);
+}
