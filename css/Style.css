@@ -2,6 +2,9 @@
 
 body{
   background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navbar img{
   width: 120px;
@@ -109,6 +112,9 @@ body{
       line-height: 0.3;
       background: rgb(0, 0, 0);
   }
+  /* .header-section img{
+    margin-top: 100px;
+  } */
 }
 
 
@@ -131,6 +137,15 @@ body{
 .about-contents{
   margin-top: 50px;
 }
+@media only screen and (max-width:767px){
+  .about img{
+width: auto;
+height: auto;
+display: block;
+margin: 0 auto;
+  }
+}
+
 /* ---------------------------css for about end-------------------------- */
 
 
@@ -188,6 +203,7 @@ font-size: 14px;
 @media only screen and (max-width:767px){
   .boocho-special .card{
       margin: 0 auto;
+      margin-top: 10px;
   }
  
 }
@@ -234,6 +250,9 @@ font-size: 14px;
   height: 401px;
 }
 @media only screen and (max-width:767px){
+  .photos h2{
+    margin-top: 150px;
+  }
   .photos img{
     display: block;
       margin: 0 auto;
@@ -264,6 +283,7 @@ font-size: 14px;
 }
 .facilities-paragraph{
   width: 400px;
+  margin-top: 20px;
 }
 .facilities p{
   color: rgb(98, 98, 99);
@@ -296,6 +316,12 @@ font-size: 14px;
   .facilities-cards{
       margin: 0 auto;
       padding: 0;
+  }
+  .facilities-cards .card{
+    margin-top: 10px;
+  }
+  .facilities-paragraph{
+    width: auto;
   }
  
 }
@@ -351,6 +377,14 @@ font-size: 14px;
 .testimonials .feedbacks .carousel-indicators .active{
   background-color: #fff;
 }
+@media only screen and (max-width:767px){
+  .testimonials-text{
+    width: auto;
+  }
+  .testimonials .feedbacks .card{
+    margin-top: 20px;
+  }
+}
 /* ---------------------------css for testimonials end-------------------------- */
 
 
@@ -393,6 +427,16 @@ font-size: 14px;
   width: 450px;
   color: rgb(98, 98, 99);
 }
+@media only screen and (max-width:767px){
+  .services-text{
+    width: auto;
+  }
+  .services-cards .card{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
 /* ---------------------------css for services end-------------------------- */
 
 
@@ -436,12 +480,21 @@ font-size: 14px;
 }
 @media only screen and (max-width:767px){
   .contact .contact-contents img{
+    display: block;
       margin: 0 auto;
-      width: 450px;
+      margin-top: 30px;
+      width: 90%;
       height: auto;
   }
   .contact .contact-contents form{
     margin: 0 auto;
+  }
+  .contact-text{
+    width: auto;
+  }
+  .contact .contact-contents form{
+    width: auto;
+    height: auto;
   }
 }
 
@@ -479,18 +532,15 @@ font-size: 14px;
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .menu  .row,
 .row >  .column {
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .menu  .column {
   float: left;
-  /* width: 33.33%; */
   width: 25%;
-  display: none; /* Hide columns by default */
+  display: none; 
 }
 @media only screen and (max-width:767px){
   .menu  .column{
@@ -498,27 +548,29 @@ font-size: 14px;
     height: auto;
     margin: 0 auto;
   }
+  .menu{
+    padding: 0;
+  }
+  .menu-text{
+    width: auto;
+  }
 }
 
-/* Clear floats after rows */
 .menu  .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .menu  .content {
   padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
 .menu .show {
   display: block;
 }
 
-/* Style the buttons */
-.menu  .btn {
+.menu .menu-gallery .buttonlist .btn {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -527,13 +579,11 @@ font-size: 14px;
   color: rgb(180, 170, 170);
 }
 
-/* Add a grey background color on mouse-over */
-.menu  .btn:hover {
+.menu .menu-gallery .buttonlist   .btn:hover {
   background-color: rgb(255, 208, 0);
 }
 
-/* Add a dark background color to the active button */
-.menu  .btn.active {
+.menu .menu-gallery .buttonlist   .btn.active {
   background-color: rgb(255, 208, 0);
    color: white;
 }
@@ -657,16 +707,6 @@ font-size: 14px;
   margin-top: 30px;
 }
 
-
-
-
-
-
-/* ---------------------------css for footer end-------------------------- */
-
-
-
-
 ul.social-network {
   list-style: none;
   display: inline;
@@ -747,3 +787,84 @@ ul.social-network li {
 .social-network a {
   background-color: rgb(167, 115, 4);
 }
+
+@media only screen and (max-width:767px){
+  .footer{
+    margin: 0 auto;
+  }
+  .footer h5{
+    margin-top: 30px;
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu-text{
+    width: auto;
+  }
+}
+
+
+
+/* ---------------------------css for footer end-------------------------- */
+
+
+
+/* .menu-items .Portfolio {
+  position: relative;
+  margin: 5px;
+  border: 2px solid black;
+  float: left;
+  width: 180px;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  animation: winanim 0.5s ;
+-webkit-backface-visibility:visible;
+  backface-visibility:visible;
+  box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
+}
+
+.menu-items .Portfolio:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.menu-items .Portfolio img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px
+}
+
+.menu-items .desc {
+  padding: 5px;
+  text-align: center;
+  font-size: 90%;
+  background:black;
+  color:hotpink
+}
+
+.menu-items .nav {
+  padding:20px;
+  margin-left:340px;
+  margin-top:-30px;
+}
+
+.menu-items .nav li a { 
+  margin:5px;
+  padding: 15px 50px; 
+  font-size:16px; 
+  color:hotpink; 
+  background: #000;
+  transition-duration: 0.4s;
+}
+.menu-items .nav a:hover { 
+  background:#333; 
+}
+.menu-items .nav .active { 
+  background-color:hotpink !important;
+  color:#fff;
+}
+
+@keyframes winanim {
+  0%{opacity:0;transform:scale3d(.3,.3,.3)}
+  50%{opacity:1}
+  
+} */
