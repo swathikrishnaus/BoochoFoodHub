@@ -19,9 +19,29 @@ body{
     background:rgb(0, 0, 0);
     margin: 20px;
     box-shadow: 0 0 1px rgb(0, 0, 0);
-    border: 0px;
+    /* border: 0px; */
     color: #fff;
     border-radius: 15px;
+    border: 10px rgb(255, 255, 255);
+}
+.book-btn{
+  height: 40px;
+    width: 130px;
+    background:rgb(43, 40, 40);
+    margin: 20px;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    /* border: 0px; */
+    color: #fff;
+    border-radius: 15px;
+    border: 10px rgb(255, 255, 255);
+}
+.bookbtn:hover{
+  opacity: .7;
+  transition-duration: 0.5s;
+  border: none;
+}
+.book-btn:hover{
+  opacity: .7;
 }
 .carousel-caption{
   text-align: left;
@@ -50,12 +70,7 @@ body{
   color: rgb(167, 154, 154);
   font-weight: normal;
 }
- .bookbtn:hover{
-  border: #be1515;
-  transform: scale(1.1);
-  transition-duration: 0.5s;
-  border: none;
-}
+
 .home .carousel-item{
   height: 100vh;
   min-height: 300px;
@@ -76,29 +91,24 @@ body{
   width: 60%;
   /* font-size: 18px; */
 }
-
+/* .navbar{
+  background-color: rgb(19, 18, 18);
+} */
 .navbar-nav a{
   font-size: 16px;
 }
-/* .navbar-light .navbar-brand{
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-} */
-.navbar-light .navbar-nav .nav-link{
-  color: rgb(0, 0, 0);
+.navbar .nav-item:hover{
+  color: rgb(255, 208, 0);
 }
-/* .navbar-nav{
-  text-align: left;
-} */
 .nav-link{
   padding: .2rem 1rem;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+ .navbar-nav .nav-link:focus, .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover{
   color: rgb(255, 208, 0) !important;
 }
+/* .navbar .nav-item.active{
+  color: rgb(255, 208, 0) !important;
+} */
 .w-100{
   height: 100vh;
 }
@@ -222,14 +232,17 @@ font-size: 14px;
 }
 .gallery button{
   text-align: right;
- 
 }
+ h2{
+  font-weight: normal;
+ }
+
 .photos .btn{
   background: rgb(255, 208, 0);
   color: white;
 }
 .photos .btn:hover{
-  opacity: .6;
+  opacity: .7;
 }
 .photos img{
   width: 300px;
@@ -238,8 +251,6 @@ font-size: 14px;
 }
 .photos img:hover{
   opacity: .7;
-  transform: scale(1.1);
-  transition: transform .2s;
 }
 .photo-column{
   width: 265px;
@@ -250,23 +261,82 @@ font-size: 14px;
   height: 401px;
 }
 @media only screen and (max-width:767px){
-  .photos h2{
-    margin-top: 150px;
-  }
-  .photos img{
-    display: block;
-      margin: 0 auto;
-      padding: 0;
-      margin-top: 10px;
-  }
-  .photos{
+  .gallery .product{
     margin: 0 auto;
   }
   .photos .row{
     margin-top: 10px;
   }
 }
+.gallery .product{
+  transform: translate(-10%,-10%);
+  width: 250px;
+  height: 260px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background:rgb(15, 15, 15);
+  overflow: hidden;
+}
+.gallery .product .stars{
+  color: rgb(255, 208, 0);
+  font-size: 13px;
+}
+.gallery .product .imgbox{
+  height: 70%;
+  box-sizing: border-box;
+}
+.gallery .product .imgbox img{
+  display: block;
+  width: 100%;
+  margin: 0 auto ;
+}
+.gallery .product .photos-card-para{
+  margin-top: 5px;
+  padding: 5px;
+}
 
+.gallery .specifies{
+  position: absolute;
+  width: 100%;
+  bottom: -150px;
+  background: rgb(15, 15, 15);
+  padding:20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.gallery .product:hover .specifies{
+  bottom: 0;
+}
+.gallery .specifies h2{
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 20px;
+  width: 100%;
+}
+.gallery .specifies h2 span{
+  font-size: 15px;
+  color: rgb(128, 124, 124);
+  font-weight: normal;
+}
+.gallery .specifies .price{
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.gallery .product   button{
+  width: 80px;
+  background-color: rgb(255, 208, 0);
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px 0 0;
+  font-size: 13px;
+}
 
 /* ---------------------------css for photos end-------------------------- */
 
@@ -358,6 +428,12 @@ font-size: 14px;
   margin: 0 auto;
   font-size: 13px;
 }
+.testimonials .carousel-control-prev{
+  margin-left: -110px;
+}
+.testimonials .carousel-control-next{
+  margin-right: -110px;
+}
 .testimonials .feedbacks .card h6, p{
   color: rgb(98, 98, 99);
   
@@ -384,6 +460,12 @@ font-size: 14px;
   .testimonials .feedbacks .card{
     margin-top: 20px;
   }
+  .testimonials .carousel-control-prev{
+    margin: auto;
+  }
+  .testimonials .carousel-control-next{
+    margin: auto;
+  }
 }
 /* ---------------------------css for testimonials end-------------------------- */
 
@@ -397,6 +479,7 @@ font-size: 14px;
 
 .services{
   margin-top: 200px;
+  margin-bottom: 70px;
 }
 .services-cards{
   margin-top: 50px;
@@ -406,6 +489,15 @@ font-size: 14px;
   padding-top: 30px;
   border-top-right-radius: 15%;
   width: 265px;
+  transition: background-color 2s ease-out 100ms;
+}
+.services-cards  .card:hover{
+  background-color: rgb(48, 43, 43);
+  
+}
+.services-cards .services-text .card:hover{
+  background-color: rgb(212, 16, 16);
+  
 }
 .services-cards .card img{
   width: 70px;
@@ -506,10 +598,10 @@ font-size: 14px;
 
 /* ---------------------------css for menu start-------------------------- */
 .menu{
-  margin-top: 200px;
-  width: 100%;
+  margin-top: 130px;
+  /* width: 100%; */
   background-color: #111010;
-  padding: 55px;
+  padding: 60px;
 }
 .menu-text{
   width: 450px;
@@ -576,6 +668,7 @@ font-size: 14px;
   padding: 12px 16px;
   background: none;
   cursor: pointer;
+  margin-bottom: 40px;
   color: rgb(180, 170, 170);
 }
 
@@ -583,32 +676,114 @@ font-size: 14px;
   background-color: rgb(255, 208, 0);
 }
 
-.menu .menu-gallery .buttonlist   .btn.active {
+.menu .menu-gallery .buttonlist   .btn:focus {
   background-color: rgb(255, 208, 0);
    color: white;
 }
 
 
-.menu  .card{
-  background-color: rgb(0, 0, 0);
-  border-top-right-radius: 15%;
-  width: 260px;
-}
-.menu  .card img{
-  border-top-right-radius: 15%;
-  width: 100%;
-}
-.menu  .card .price p{
-  color: rgb(180, 170, 170);
-}
-.menu  .card a{
-  color: rgb(180, 170, 170);
-}
-.menu  .card a:hover{
-  color: rgb(255, 208, 0);
-}
 .buttonlist .btn{
   margin: 0 auto;
+}
+.menu .product{
+  transform: translate(-10%,-10%);
+  width: 250px;
+  height: 260px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background:rgb(0, 0, 0);
+  overflow: hidden;
+}
+.menu .product .stars{
+  color: rgb(255, 208, 0);
+  /* margin: 0 auto; */
+  font-size: 13px;
+}
+.menu .product .imgbox{
+  height: 70%;
+  box-sizing: border-box;
+}
+.menu .product .imgbox img{
+  display: block;
+  width: 100%;
+  margin: 0 auto ;
+}
+.menu .product .menu-card-para{
+  margin-top: 5px;
+  padding: 5px;
+  /* justify-content: center;
+  text-align: justify; */
+}
+
+.menu .specifies{
+  position: absolute;
+  width: 100%;
+  bottom: -150px;
+  background: rgb(0, 0, 0);
+  padding:20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.menu .product:hover .specifies{
+  bottom: 0;
+}
+.menu .specifies h2{
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 20px;
+  width: 100%;
+}
+.menu .specifies h2 span{
+  font-size: 15px;
+  color: rgb(128, 124, 124);
+  font-weight: normal;
+}
+.menu .specifies .price{
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.menu label{
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.menu   .product button{
+  width: 200px;
+  background-color: rgb(255, 208, 0);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+.menu   .menu-btn{
+  width: 150px;
+  background-color: rgb(255, 208, 0);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+.menu   .menu-btn:hover{
+  background-color: rgb(207, 172, 16)
+}
+
+@media only screen and (max-width:767px){
+  .menu .content .product{
+    margin: 0 auto;
+  }
+  .menu   .menu-btn{
+    margin-left: 80px;
+    margin-top: -20px;
+    /* display: block; */
+  }
 }
 /* ---------------------------css for menu end-------------------------- */
 
@@ -631,6 +806,10 @@ font-size: 14px;
 }
 .footer .links{
   margin-top: 30px;
+}
+.footer a:hover{
+  text-decoration: none;
+  color: rgb(255, 208, 0);
 }
 .footer a{
   
@@ -673,7 +852,7 @@ font-size: 14px;
 	float:left;
 	margin:0 5px 0 0;
 	cursor:pointer;
-	background:rgb(255, 208, 0) ;
+	background:rgb(255, 38, 0) ;
 	color:#262626;
 	transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -785,7 +964,7 @@ ul.social-network li {
 }
 
 .social-network a {
-  background-color: rgb(167, 115, 4);
+  background-color: rgb(255, 208, 0);
 }
 
 @media only screen and (max-width:767px){
@@ -809,62 +988,5 @@ ul.social-network li {
 
 
 
-/* .menu-items .Portfolio {
-  position: relative;
-  margin: 5px;
-  border: 2px solid black;
-  float: left;
-  width: 180px;
-  transition-duration: 0.4s;
-  border-radius: 5px;
-  animation: winanim 0.5s ;
--webkit-backface-visibility:visible;
-  backface-visibility:visible;
-  box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
-}
+/* .product{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 300px;height: 400px;box-shadow: 0 20px 40px rgba(0,0,0,.2);border-radius: 5px;background:#0e0e0f;overflow: hidden}.product .imgbox{height: 100%;box-sizing: border-box}.product .imgbox img{display: block;width: 80%;margin: 10px auto 0}.specifies{position: absolute;width: 100%;bottom: -160px;background: #fff;padding:10px;box-sizing: border-box;transition: .5s}.product:hover .specifies{bottom: 0}.specifies h2{margin: 0;padding: 0;font-size: 20px;width: 100%}.specifies h2 span{font-size: 15px;color: #ccc;font-weight: normal}.specifies .price{position: absolute;top: 12px;right: 25px;font-weight: bold;color: #000;font-size: 30px}label{display: block;margin-top: 5px;font-weight: bold;font-size: 15px}ul{display: flex;margin: 0;padding: 0}ul li{list-style: none;margin: 5px 5px 0;font-size: 15px;font-style: normal;color: #ccc}ul li:first-child{margin-left: 0}ul.colors li{width: 15px;height: 15px}ul.colors li:nth-child(1){background: #4A148C}ul.colors li:nth-child(2){background: #F50057}ul.colors li:nth-child(3){background: #536DFE}ul.colors li:nth-child(4){background: #388E3C}ul.colors li:nth-child(5){background: #FF6D00}.btn{display: block;padding: 5px;color: #fff;margin: 10px 0 0;width:100%;font-size: 13px;border-radius: 2px} */
 
-.menu-items .Portfolio:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-}
-
-.menu-items .Portfolio img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px
-}
-
-.menu-items .desc {
-  padding: 5px;
-  text-align: center;
-  font-size: 90%;
-  background:black;
-  color:hotpink
-}
-
-.menu-items .nav {
-  padding:20px;
-  margin-left:340px;
-  margin-top:-30px;
-}
-
-.menu-items .nav li a { 
-  margin:5px;
-  padding: 15px 50px; 
-  font-size:16px; 
-  color:hotpink; 
-  background: #000;
-  transition-duration: 0.4s;
-}
-.menu-items .nav a:hover { 
-  background:#333; 
-}
-.menu-items .nav .active { 
-  background-color:hotpink !important;
-  color:#fff;
-}
-
-@keyframes winanim {
-  0%{opacity:0;transform:scale3d(.3,.3,.3)}
-  50%{opacity:1}
-  
-} */
