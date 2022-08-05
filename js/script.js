@@ -42,24 +42,19 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-
+// --------------nav clr-------------------
+$(document).ready(function () {
+ 
+  $('ul.navbar-nav > li')
+          .click(function (e) {
+      $('ul.navbar-nav > li')
+          .removeClass('active');
+      $(this).addClass('active');
+  });
+});
 
 // -------------------------Menu---------------------------
 
 $(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  if(scroll < 300){
-      $('.fixed-top').css('background', 'transparent');
-  } else{
-      $('.fixed-top').css('background', 'black');
-  }
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
-// -------------------------Menu---------------------------
-
-
-
-
-
-
-
- 

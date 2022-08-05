@@ -30,7 +30,6 @@ body{
     background:rgb(43, 40, 40);
     margin: 20px;
     box-shadow: 0 0 1px rgb(0, 0, 0);
-    /* border: 0px; */
     color: #fff;
     border-radius: 15px;
     border: 10px rgb(255, 255, 255);
@@ -48,6 +47,7 @@ body{
 }
 .carousel-contents{
   margin-left: 5px !important;
+  color: rgb(189, 189, 194);
 }
 .carouselbtn{
   margin-top: 30px;
@@ -79,21 +79,27 @@ body{
 }
 .carousel-item .carousel-caption{
   bottom: 180px;
-  
 }
 .carousel-caption h1{
   font-size: 40px;
   font-weight: normal;
-  /* margin-top: 100px; */
   margin-top: 500px;
 }
 .carousel-caption p{
   width: 60%;
-  /* font-size: 18px; */
 }
-/* .navbar{
-  background-color: rgb(19, 18, 18);
-} */
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:#000;
+}
+
+
+
+
+
 .navbar-nav a{
   font-size: 16px;
 }
@@ -106,9 +112,9 @@ body{
  .navbar-nav .nav-link:focus, .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover{
   color: rgb(255, 208, 0) !important;
 }
-/* .navbar .nav-item.active{
+ .navbar-nav .nav-link.active{
   color: rgb(255, 208, 0) !important;
-} */
+}
 .w-100{
   height: 100vh;
 }
@@ -116,19 +122,45 @@ body{
   .navbar-nav.ml-auto{
       background: rgba(0,0,0,0.5);
   }
-  .naabar-toggler{
-      padding: 1px 5px;
-      font-size: 18px;
-      line-height: 0.3;
-      background: rgb(0, 0, 0);
+  .navbar-default{
+    background:#000;
   }
-  /* .header-section img{
-    margin-top: 100px;
+  .navbar-toggler{
+      padding: 1px 5px;
+      font-size: 15px;
+      line-height: 0.3;
+      color: rgb(235, 235, 235);
+  }
+  .bookbtn{
+    margin: 0 auto;
+  }
+  /* .header-section .carousel-inner img{
+    height: 80vh;
+    width: auto;
   } */
 }
 
+/* div.next {
+  background-color: lightblue;
+  width: 100%;
+  height: 60rem;
+}
+div.next {
+  background-color: lightblue;
+  width: 100%;
+  height: 60rem;
+}
 
+.container {
+  padding: 0px;
+}
 
+nav.navbar {
+  width: inherit;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+} */
 /* ---------------------------css for about start-------------------------- */
 
 .about{
@@ -252,19 +284,25 @@ font-size: 14px;
 .photos img:hover{
   opacity: .7;
 }
-.photo-column{
+/* .photo-column{
   width: 265px;
   height: auto;
 }
 .photo-column2{
   width: 265px;
   height: 401px;
-}
+} */
 @media only screen and (max-width:767px){
   .gallery .product{
     margin: 0 auto;
   }
   .photos .row{
+    margin-top: 10px;
+  }
+  .photos img{
+    
+    display: block;
+    margin: 0 auto;
     margin-top: 10px;
   }
 }
@@ -367,6 +405,12 @@ font-size: 14px;
   padding-top: 25px;
   background-color: black;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  transition: background-color 2s ease-out 100ms;
+
+}
+.facilities-cards .card:hover{
+  background-color: rgb(48, 43, 43);
+  
 }
 .facilities-cards .card a{
   color: rgb(98, 98, 99);
@@ -413,16 +457,21 @@ font-size: 14px;
 }
 .testimonials .feedbacks .card{
   background: none;
+  width: 200px;
+  padding-top: 10px;
 }
 .testimonials .feedbacks{
   margin-top: 50px;
 }
 .testimonials .feedbacks .card img{
-  width: 150px;
+  width: 100px;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
 }
+/* .testimonials .feedbacks .card:hover{
+  box-shadow: rgb(255, 208, 0) 0px 1px 0px, rgb(255, 208, 0) 0px 1px 0px inset;
+} */
 .testimonials .feedbacks .card .stars{
   color: rgb(255, 208, 0);
   margin: 0 auto;
@@ -569,6 +618,9 @@ font-size: 14px;
   background-color: rgb(255, 208, 0);
   color: white;
   border-radius: 10px;
+}
+.contact .contact-contents form .btn:hover{
+  background-color: rgb(207, 172, 16);
 }
 @media only screen and (max-width:767px){
   .contact .contact-contents img{
@@ -763,6 +815,10 @@ font-size: 14px;
   margin: 10px 0 0;
   font-size: 13px;
 }
+.menu   .product button:hover{
+  background-color: rgb(207, 172, 16);
+}
+
 .menu   .menu-btn{
   width: 150px;
   background-color: rgb(255, 208, 0);
@@ -772,7 +828,7 @@ font-size: 14px;
   font-size: 13px;
 }
 .menu   .menu-btn:hover{
-  background-color: rgb(207, 172, 16)
+  background-color: rgb(207, 172, 16);
 }
 
 @media only screen and (max-width:767px){
