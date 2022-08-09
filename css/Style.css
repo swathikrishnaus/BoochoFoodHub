@@ -1,4 +1,4 @@
-
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 body{
   background-color: black;
@@ -27,15 +27,13 @@ body{
 .book-btn{
   height: 40px;
     width: 130px;
-    background:rgb(43, 40, 40);
+    background:rgb(255, 208, 0);
     margin: 20px;
-    box-shadow: 0 0 1px rgb(0, 0, 0);
     color: #fff;
     border-radius: 15px;
-    border: 10px rgb(255, 255, 255);
 }
 .bookbtn:hover{
-  opacity: .7;
+  background-color: rgb(247, 203, 11);
   transition-duration: 0.5s;
   border: none;
 }
@@ -174,7 +172,14 @@ nav.navbar {
   color: rgb(98, 98, 99);
   margin-top: 20px;
 }
-
+.about-btn{
+  background-color: rgb(255, 208, 0);
+  color: white;
+  margin-right: 10px;
+  border-radius: 15px;
+  width: 140px;
+  transition: 0.3s;
+}
 
 .about-contents{
   margin-top: 50px;
@@ -189,6 +194,64 @@ margin: 0 auto;
 }
 
 /* ---------------------------css for about end-------------------------- */
+
+
+
+
+
+/* ---------------------------css for about-us page start-------------------------- */
+
+.about-us{
+  margin-top: 150px;
+}
+.about-us img{
+  margin-top: 80px;
+}
+.about-facilities{
+  margin-top: 200px;
+}
+
+.sidenav {
+  height: 50%;
+  width: 160px;
+  position: sticky;
+  margin-top: 30px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-top: -300px;
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ---------------------------css for about-us end-------------------------- */
+
+
+
+
+
 
 
 /* ---------------------------css for boocho-special start-------------------------- */
@@ -272,6 +335,8 @@ font-size: 14px;
 .photos .btn{
   background: rgb(255, 208, 0);
   color: white;
+  border-radius: 15px;
+  padding: 6px 15px;
 }
 .photos .btn:hover{
   opacity: .7;
@@ -405,16 +470,29 @@ font-size: 14px;
   padding-top: 25px;
   background-color: black;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  transition: background-color 2s ease-out 100ms;
+  transition: background-color 0.5s ease-out 100ms;
 
 }
+.facilities-cards h5{
+  color: white;
+}
 .facilities-cards .card:hover{
-  background-color: rgb(48, 43, 43);
+  background-color: rgb(14, 13, 13);
+  color: white;
   
 }
+.facilities-cards .card:hover h5{
+  color: rgb(255, 208, 0);
+}
+.facilities-cards .card:hover p{
+  color: rgb(202, 193, 193);
+}
 .facilities-cards .card a{
-  color: rgb(98, 98, 99);
+  color: rgb(202, 193, 193);
   text-align: center;
+}
+.facilities-cards .card:hover a{
+  color: rgb(255, 208, 0);
 }
 .facilities-cards .card a:hover{
   text-decoration: none;
@@ -457,8 +535,12 @@ font-size: 14px;
 }
 .testimonials .feedbacks .card{
   background: none;
-  width: 200px;
+  width: 350px !important;
+  text-align: justify;
   padding-top: 10px;
+}
+.testimonials .feedbacks .card:hover .card-text{
+  color: rgb(202, 193, 193);
 }
 .testimonials .feedbacks{
   margin-top: 50px;
@@ -538,16 +620,27 @@ font-size: 14px;
   padding-top: 30px;
   border-top-right-radius: 15%;
   width: 265px;
-  transition: background-color 2s ease-out 100ms;
+  text-align: justify;
+  transition: background-color 0.5s ease-out 100ms;
 }
 .services-cards  .card:hover{
-  background-color: rgb(48, 43, 43);
+  background-color: rgb(27, 26, 26);
   
 }
-.services-cards .services-text .card:hover{
+.services-cards .card h5{
+  color: white;
+}
+.services-cards  .card:hover  p{
+  color: rgb(202, 193, 193);
+  
+}
+.services-cards  .card:hover  h5{
+  color: rgb(255, 208, 0);
+}
+/* .services-cards .services-text .card:hover{
   background-color: rgb(212, 16, 16);
   
-}
+} */
 .services-cards .card img{
   width: 70px;
   height: auto;
@@ -557,13 +650,7 @@ font-size: 14px;
   width: 85px;
   margin-top: -8px;
 }
-.services-cards .card a{
-  color: rgb(98, 98, 99);
-}
-.services-cards .card a:hover{
-  color: rgb(255, 208, 0);
-  text-decoration: none;
-}
+
 .services-text{
   width: 450px;
   color: rgb(98, 98, 99);
@@ -648,6 +735,132 @@ font-size: 14px;
 
 
 
+
+/* ---------------------------css for conttact page start-------------------------- */
+
+
+.contactus{
+  margin-top: 200px;
+}
+.contactus img{
+  margin-top: -150px;
+}
+.contactus .contactus-text{
+text-align: justify;
+}
+.contatctus-details{
+  margin-top: 130px;
+  background-color: #111010;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.social-mediaicons-conatct{
+  margin-top: 30px;
+}
+
+.social-menu ul{
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  padding: 0;
+  margin: 0;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 5px;
+}
+
+.social-menu ul li .fab{
+  font-size: 16px;
+  line-height: 30px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li:hover .fab{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(209, 202, 202);
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+}
+/* .social-menu ul li:nth-child(4) a:hover{
+  background-color: #000;
+} */
+.contactus  form{
+  margin-top: 30px;
+  width: 400px;
+  background: #181616;
+  padding: 35px;
+  border-top-right-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.contactus  form input {
+  background-color: #111010;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.contactus  form textarea{
+  background-color: #111010;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+.contactus  form .btn{
+  width: 200px;
+  border-color: rgb(255, 208, 0);
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+.contactus  form .btn:hover{
+  background-color: rgb(207, 172, 16);
+}
+.keep-in-touch{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.keep-in-touch a{
+  color: rgb(202, 193, 193);
+}
+.keep-in-touch a:hover{
+  color: rgb(255, 208, 0);
+  text-decoration: none;
+}
+
+
+/* ---------------------------css for conttact page end-------------------------- */
+
+
+
+
 /* ---------------------------css for menu start-------------------------- */
 .menu{
   margin-top: 130px;
@@ -674,6 +887,12 @@ font-size: 14px;
 
 .menu .menu-gallery .row {
   margin: 8px -16px;
+}
+
+.menu-gallery .active{
+  color: #fff!important;
+  background: rgb(255, 208, 0)!important;
+  border-radius: 20px;
 }
 
 .menu  .row,
@@ -721,16 +940,23 @@ font-size: 14px;
   background: none;
   cursor: pointer;
   margin-bottom: 40px;
+  border-radius: 20px;
+  margin-right: 20px;
   color: rgb(180, 170, 170);
 }
 
 .menu .menu-gallery .buttonlist   .btn:hover {
   background-color: rgb(255, 208, 0);
+  color: white;
+  border-radius: 20px;
+  padding: 10px  20px;
 }
 
 .menu .menu-gallery .buttonlist   .btn:focus {
   background-color: rgb(255, 208, 0);
    color: white;
+   border-radius: 20px;
+  padding: 10px  20px;
 }
 
 

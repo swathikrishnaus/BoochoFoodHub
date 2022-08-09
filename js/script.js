@@ -1,3 +1,8 @@
+
+$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+
 filterSelection("all") 
 function filterSelection(c) {
   var x, i;
@@ -32,29 +37,28 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 
 // --------------nav clr-------------------
 $(document).ready(function () {
  
-  $('ul.navbar-nav > li')
-          .click(function (e) {
-      $('ul.navbar-nav > li')
-          .removeClass('active');
+  $('.menu-gallery .buttonlist button').click(function (e) {
+      $('.menu-gallery .buttonlist button').removeClass('active');
       $(this).addClass('active');
   });
 });
 
 // -------------------------Menu---------------------------
 
-$(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});
+
+function changeNav(cls){
+  $("." + cls).addClass("active");
+}
