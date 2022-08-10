@@ -238,13 +238,60 @@ margin: 0 auto;
 
 .main {
   margin-top: -300px;
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 160px;
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+.about-facilities{
+  background-color: rgb(15, 15, 15);
+  padding: 60px;
+}
+.about-facilities .blok{
+  margin:30px;
+}
+.about-facilities button.active, .about-facilities  button:hover {
+  background-color: rgb(255, 208, 0);
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  /* padding: 6px 10px; */
+}
+
+.about-facilities  button{
+  background-color: transparent;
+  border-color: rgb(255, 208, 0);
+  border-radius: 15px;padding: 6px 10px;
+  color: white;
+width: 200px;
+  margin-bottom: 10px;
+}
+.about-facilities .chai-makani img{
+  width: 300px;
+  height: auto;
+  /* border-radius: 50%; */
+}
+.about-facilities .collapse {
+  margin-top: 30px;
+}
+.about-facilities .card-body{
+  background-color: rgb(15, 15, 15);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-facilities .side-buttons{
+  /* background-color: #E4405F; */
+  padding: 150px 150px;
+}
+@media only screen and (max-width:767px){
+  .about-facilities .facilities-contents .side-buttons {
+    margin-top: -30px;
+    margin-left: -80px;
+  }
 }
 /* ---------------------------css for about-us end-------------------------- */
 

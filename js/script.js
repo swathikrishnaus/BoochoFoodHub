@@ -62,3 +62,26 @@ $(document).ready(function () {
 function changeNav(cls){
   $("." + cls).addClass("active");
 }
+
+
+
+
+
+// -------------------------about-us---------------------------
+
+  // BS tabs hover (instead - hover write - click)
+
+  // $('.tab-menu a').hover(function (e) {
+  //   e.preventDefault()
+  //   $(this).tab('show')
+  // })
+
+
+
+  $(document).ready(function () {
+ 
+    $('.about-facilities button').click(function (e) {
+        $('.about-facilities button').removeClass('active');
+        $(this).addClass('active');
+    });
+  });
