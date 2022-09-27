@@ -4,7 +4,8 @@ body{
   background-color: black;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins';
+  font-size: 13px;
 }
 .navbar img{
   width: 120px;
@@ -15,13 +16,13 @@ body{
 }
 .bookbtn{
   height: 40px;
-    width: 130px;
+  border-radius: 25px;
+  padding: 10px 15px;
     background:rgb(0, 0, 0);
     margin: 20px;
     box-shadow: 0 0 1px rgb(0, 0, 0);
     /* border: 0px; */
     color: #fff;
-    border-radius: 15px;
     border: 10px rgb(255, 255, 255);
 }
 
@@ -29,8 +30,9 @@ body{
   background-color: rgb(255, 208, 0);
   color: white;
   margin-right: 10px;
-  border-radius: 15px;
-  width: 140px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  /* width: 140px; */
   transition: 0.3s;
 }
 .book-btn:hover{
@@ -41,7 +43,7 @@ body{
 }
 .carousel-contents{
   margin-left: 5px !important;
-  color: rgb(189, 189, 194);
+  color: rgb(217, 217, 223);
 }
 .carouselbtn{
   margin-top: 30px;
@@ -51,8 +53,8 @@ body{
   background-color: rgb(255, 208, 0);
   color: white;
   margin-right: 10px;
-  border-radius: 15px;
-  width: 140px;
+  border-radius: 25px;
+  padding: 10px 15px;
   transition: 0.3s;
 }
 .explore:hover{
@@ -74,7 +76,7 @@ body{
   background-size: cover;
 }
 .carousel-item .carousel-caption{
-  bottom: 180px;
+  bottom: 280px;
 }
 .carousel-caption h1{
   font-size: 40px;
@@ -91,6 +93,67 @@ body{
 .navbar-default.scrolled{
   background:#000;
 }
+
+@media only screen and (max-width:767px){
+  .carousel-item .carousel-caption{
+    bottom: 150px;
+  }
+}
+
+
+
+
+/* ---------------------------------scroll up button------------------------------------- */
+.whatsapp-button{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  animation: effect 5s infinite ease-in;
+}
+.whatsapp-button:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+
+@keyframes effect {
+  20%, 100% {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+  0%, 10%{
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+  }
+  5%{
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+}
+
+/* ---------------------------------scroll up button------------------------------------- */
+
+
+
+
 
 
 
@@ -121,12 +184,87 @@ body{
   .navbar-default{
     background:#000;
   }
-  .navbar-toggler{
-      padding: 1px 5px;
-      font-size: 15px;
-      line-height: 0.3;
-      color: rgb(235, 235, 235);
+  .navbar .book-btn .navbar-nav .book-btn {
+    display: block;
+    margin-left: 97px;
   }
+
+}
+
+
+
+  /* -------------------------toggle--------------------------------- */
+  .all-btn div {
+    float: left;
+    margin-right: 10%;
+}
+
+.all-btn div:last-child {
+    margin-right: 0;
+}
+
+
+/* Menu Button 1 */
+.menu-btn-1 {
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+}
+
+    .menu-btn-1 span,
+    .menu-btn-1 span::before,
+    .menu-btn-1 span::after {
+        background: rgb(255, 255, 255);
+        border-radius: 3px;
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 5px;         
+        margin-top: 13px; 
+
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .menu-btn-1 span::before {
+        margin-top:-12px;
+    }
+
+    .menu-btn-1 span::after {
+        margin-top:12px;
+    }
+
+    .menu-btn-1.active span {
+        background: transparent;
+    }
+
+    .menu-btn-1.active span::before {
+        margin-top: 0;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .menu-btn-1.active span::after {
+        margin-top: 0;
+
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+
+  /* ------------------------------toggle-------------------------------------- */
+
+
+
+
+
   .bookbtn{
     margin: 0 auto;
   }
@@ -134,29 +272,9 @@ body{
     height: 80vh;
     width: auto;
   } */
-}
 
-/* div.next {
-  background-color: lightblue;
-  width: 100%;
-  height: 60rem;
-}
-div.next {
-  background-color: lightblue;
-  width: 100%;
-  height: 60rem;
-}
 
-.container {
-  padding: 0px;
-}
 
-nav.navbar {
-  width: inherit;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 /* ---------------------------css for about start-------------------------- */
 
 .about{
@@ -174,8 +292,8 @@ nav.navbar {
   background-color: rgb(255, 208, 0);
   color: white;
   margin-right: 10px;
-  border-radius: 15px;
-  width: 140px;
+  border-radius: 25px;
+  padding: 10px 15px;
   transition: 0.3s;
 }
 .about-btn:hover{
@@ -382,8 +500,8 @@ font-size: 14px;
   background-color: rgb(255, 208, 0);
   color: white;
   margin-right: 10px;
-  border-radius: 15px;
-  width: 140px;
+  border-radius: 25px;
+  padding: 10px 15px;
   transition: 0.3s;
 }
 .photos .btn:hover{
@@ -668,6 +786,7 @@ font-size: 14px;
   padding-top: 30px;
   border-top-right-radius: 15%;
   width: 265px;
+  height: 100%;
   text-align: justify;
   transition: background-color 0.5s ease-out 100ms;
 }
@@ -752,8 +871,8 @@ font-size: 14px;
   background-color: rgb(255, 208, 0);
   color: white;
   margin-right: 10px;
-  border-radius: 15px;
-  width: 140px;
+  border-radius: 25px;
+  padding: 10px 30px;
   transition: 0.3s;
 }
 .contact .contact-contents form .btn:hover{
@@ -888,7 +1007,7 @@ text-align: justify;
   border-color: rgb(255, 208, 0);
   background-color: transparent;
   color: white;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 .contactus  form .btn:hover{
   background-color: rgb(207, 172, 16);
@@ -1046,7 +1165,7 @@ text-align: justify;
 .menu .specifies{
   position: absolute;
   width: 100%;
-  bottom: -150px;
+  bottom: -140px;
   background: rgb(0, 0, 0);
   padding:20px;
   box-sizing: border-box;
@@ -1059,11 +1178,11 @@ text-align: justify;
   margin: 0;
   padding: 0;
   color: #ccc;
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
 }
 .menu .specifies h2 span{
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(128, 124, 124);
   font-weight: normal;
 }

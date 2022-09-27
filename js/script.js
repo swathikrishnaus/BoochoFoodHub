@@ -85,3 +85,21 @@ function changeNav(cls){
         $(this).addClass('active');
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function menuBtnFunction(menuBtn) {
+    menuBtn.classList.toggle("active");
+}
