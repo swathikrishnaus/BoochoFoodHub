@@ -6,6 +6,16 @@ body{
   padding: 0;
   font-family: 'Poppins';
   font-size: 13px;
+  text-align: justify;
+}
+@media only screen and (max-width:767px){
+  body h1,h2,h3,h4,h5,h6,p,a{
+    text-align: center;
+  }
+  body img{
+    display: block;
+    margin: 0 auto;
+  }
 }
 .navbar img{
   width: 120px;
@@ -21,7 +31,6 @@ body{
     background:rgb(0, 0, 0);
     margin: 20px;
     box-shadow: 0 0 1px rgb(0, 0, 0);
-    /* border: 0px; */
     color: #fff;
     border: 10px rgb(255, 255, 255);
 }
@@ -32,7 +41,6 @@ body{
   margin-right: 10px;
   border-radius: 25px;
   padding: 10px 15px;
-  /* width: 140px; */
   transition: 0.3s;
 }
 .book-btn:hover{
@@ -167,9 +175,9 @@ body{
 
 
 
-.navbar-nav a{
+/* .navbar-nav a{
   font-size: 16px;
-}
+} */
 .navbar .nav-item:hover{
   color: rgb(255, 208, 0);
 }
@@ -189,6 +197,7 @@ body{
   .navbar{
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
   }
   .navbar-nav.ml-auto{
       background: rgba(0,0,0,0.5);
@@ -199,6 +208,12 @@ body{
   .navbar .book-btn .navbar-nav .book-btn {
     display: block;
     margin-left: 97px;
+  }
+  .nav-link{
+    text-align: left;
+  }
+  .navbar .btn:not(:disabled):not(.disabled){
+    margin-left: 92px;
   }
 
 }
@@ -299,6 +314,7 @@ body{
   /* width: 500px; */
   color: rgb(98, 98, 99);
   margin-top: 20px;
+  text-align: justify;
 }
 .about-btn{
   background-color: rgb(255, 208, 0);
@@ -420,18 +436,23 @@ width: 200px;
 .about-facilities .collapse {
   margin-top: 30px;
 }
+
 .about-facilities .card-body{
   background-color: rgb(15, 15, 15);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: justify;
 }
 .about-facilities .side-buttons{
   /* background-color: #E4405F; */
   padding: 150px 150px;
 }
+.about-facilities .facilities-cards{
+  margin-top: -158px;
+}
 @media only screen and (max-width:767px){
   .about-facilities .facilities-contents .side-buttons {
-    margin-top: -30px;
-    margin-left: -80px;
+    margin-top: -100px;
+    margin-left: -126px;
   }
 }
 /* ---------------------------css for about-us end-------------------------- */
@@ -878,6 +899,7 @@ font-size: 14px;
 }
 .contact-text{
   width: 420px;
+  text-align: justify;
 }
 .contact .contact-contents img{
   margin-top: -90px;
@@ -1029,6 +1051,7 @@ text-align: justify;
   padding: 15px;
   border: none;
   border-radius: 10px;
+  font-size: 13px;
 }
 .contactus  form textarea{
   background-color: #111010;
@@ -1056,6 +1079,36 @@ text-align: justify;
 .keep-in-touch a:hover{
   color: rgb(255, 208, 0);
   text-decoration: none;
+}
+@media only screen and (max-width:767px){
+  .contactus img{
+    display: block;
+    margin: 0 auto;
+  }
+  .keep-in-touch{
+    margin: 0 auto;
+  }
+  .social-mediaicons-conatct{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .contactus .contact-us-address {
+   text-align: center;
+  }
+  .contatctus-details{
+    padding: 18px;
+  }
+  .social-menu ul{
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .contactus  form{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
 }
 
 
@@ -1114,8 +1167,14 @@ text-align: justify;
     height: auto;
     margin: 0 auto;
   }
+  .menu  .container{
+    padding-top: 50px;
+  }
   .menu{
     padding: 0;
+  }
+  .menu .menu-gallery .buttonlist .btn{
+    margin: -5px;
   }
   .menu-text{
     width: auto;
@@ -1199,7 +1258,7 @@ text-align: justify;
 .menu .specifies{
   position: absolute;
   width: 100%;
-  bottom: -140px;
+  bottom: -138px;
   background: rgb(41, 39, 39);
   padding:20px;
   box-sizing: border-box;
@@ -1222,7 +1281,7 @@ text-align: justify;
 }
 .menu .specifies .price{
   position: absolute;
-  top: 12px;
+  top: 14px;
   right: 25px;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -1261,13 +1320,18 @@ text-align: justify;
 }
 
 @media only screen and (max-width:767px){
-  .menu .content .product{
+  .menu .product {
     margin: 0 auto;
+  }
+  .menu .specifies{
+    justify-content: center;
+  }
+  .menu .specifies h2{
+    text-align: center;
   }
   .menu   .menu-btn{
     margin-left: 80px;
     margin-top: -20px;
-    /* display: block; */
   }
 }
 /* ---------------------------css for menu end-------------------------- */
@@ -1456,6 +1520,12 @@ ul.social-network li {
   .footer{
     margin: 0 auto;
   }
+  .footer .links{
+    text-align: center;
+  }
+  .footer-icons{
+    justify-content: center;
+  }
   .footer h5{
     margin-top: 30px;
   }
@@ -1464,6 +1534,9 @@ ul.social-network li {
   }
   .menu-text{
     width: auto;
+  }
+  .footer-contact{
+    text-align: center;
   }
 }
 
